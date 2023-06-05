@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perfil">
+
+    <TextView
+        android:id="@+id/p_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="cursive"
+        android:text="O M_u Pe_fil"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Test_User"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/p_title" />
+
+    <TextView
+        android:id="@+id/p_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="Level 13"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/p_user" />
+
+    <ProgressBar
+        android:id="@+id/p_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:max="1000"
+        android:progress="750"
+        android:progressBackgroundTintMode="add"
+        android:progressTint="#98D625"
+        app:layout_constraintEnd_toEndOf="@+id/p_title"
+        app:layout_constraintStart_toStartOf="@+id/p_title"
+        app:layout_constraintTop_toBottomOf="@id/p_lvl" />
+
+    <TextView
+        android:id="@+id/zero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="0"
+        android:textDirection="rtl"
+        app:layout_constraintStart_toStartOf="@+id/p_progress"
+        app:layout_constraintTop_toBottomOf="@+id/p_progress" />
+
+    <TextView
+        android:id="@+id/mil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="1000"
+        app:layout_constraintEnd_toEndOf="@+id/p_progress"
+        app:layout_constraintTop_toBottomOf="@+id/p_progress" />
+
+    <TextView
+        android:id="@+id/totalxp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Total de XP :"
+        app:layout_constraintEnd_toEndOf="@+id/p_lvl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zero" />
+
+    <TextView
+        android:id="@+id/nr_totalxp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/p_lvl"
+        app:layout_constraintTop_toBottomOf="@+id/zero" />
+
+    <TextView
+        android:id="@+id/letrascertas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Letras acertes :"
+        app:layout_constraintEnd_toEndOf="@+id/p_lvl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalxp" />
+
+    <TextView
+        android:id="@+id/nr_letrascertas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/p_lvl"
+        app:layout_constraintTop_toBottomOf="@+id/nr_totalxp" />
+
+    <TextView
+        android:id="@+id/ratio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Ratio :"
+        app:layout_constraintEnd_toEndOf="@+id/p_lvl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letrascertas" />
+
+    <TextView
+        android:id="@+id/nr_ratio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/p_lvl"
+        app:layout_constraintTop_toBottomOf="@+id/nr_letrascertas" />
+
+    <TextView
+        android:id="@+id/prnormal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Recorde Normal :"
+        app:layout_constraintEnd_toEndOf="@+id/p_lvl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratio" />
+
+    <TextView
+        android:id="@+id/nr_prnormal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="10000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/p_lvl"
+        app:layout_constraintTop_toBottomOf="@+id/nr_ratio" />
+
+    <TextView
+        android:id="@+id/prCR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Recorde Contra-Relógio :"
+        app:layout_constraintEnd_toEndOf="@+id/p_lvl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prnormal" />
+
+    <TextView
+        android:id="@+id/nr_prCR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="10000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/p_lvl"
+        app:layout_constraintTop_toBottomOf="@+id/nr_prnormal" />
+
+    <TextView
+        android:id="@+id/prHarcore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Recorde Hardcore :"
+        app:layout_constraintEnd_toEndOf="@+id/p_lvl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prCR" />
+
+    <TextView
+        android:id="@+id/nr_prhardcore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="10000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/p_lvl"
+        app:layout_constraintTop_toBottomOf="@+id/nr_prCR" />
+
+    <Button
+        android:id="@+id/historic"
+        android:background="@drawable/mybutton1"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Histórico"
+        android:onClick="verHistorico"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prHarcore"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

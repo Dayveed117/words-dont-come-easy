@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fundo"
+    tools:context=".partida">
+
+    <TextView
+        android:id="@+id/palavra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="monospace"
+        android:text="PAL_VRA EXEMPLO"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TIMER :"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/nextword"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/secs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/timer"
+        app:layout_constraintEnd_toEndOf="@+id/nextword" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="PONTUAÇÃO :"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/nextword"
+        app:layout_constraintTop_toBottomOf="@id/timer" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/score"
+        app:layout_constraintEnd_toEndOf="@+id/nextword" />
+
+    <Button
+        android:id="@+id/nextword"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/mybutton2"
+        android:onClick="passarPalavra"
+        android:text="Próxima palavra"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/palavra" />
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/gamebutton"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:onClick="letterTap"
+        android:text="---"
+        app:layout_constraintEnd_toStartOf="@+id/but2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextword" />
+
+    <Button
+        android:id="@+id/but2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamebutton"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:onClick="letterTap"
+        android:text="---"
+        app:layout_constraintBottom_toBottomOf="@+id/but1"
+        app:layout_constraintEnd_toStartOf="@+id/but3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/but1" />
+
+    <Button
+        android:id="@+id/but3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamebutton"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:onClick="letterTap"
+        android:text="---"
+        app:layout_constraintBottom_toBottomOf="@+id/but2"
+        app:layout_constraintEnd_toStartOf="@+id/but4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/but2" />
+
+    <Button
+        android:id="@+id/but4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamebutton"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:onClick="letterTap"
+        android:text="---"
+        app:layout_constraintBottom_toBottomOf="@+id/but3"
+        app:layout_constraintEnd_toStartOf="@+id/but5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/but3" />
+
+    <Button
+        android:id="@+id/but5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamebutton"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:onClick="letterTap"
+        android:text="---"
+        app:layout_constraintBottom_toBottomOf="@+id/but4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/but4" />
+
+    <Button
+        android:id="@+id/but6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/gamebutton"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:onClick="letterTap"
+        android:text="---"
+        app:layout_constraintEnd_toStartOf="@+id/but7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but1" />
+
+    <Button
+        android:id="@+id/but7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamebutton"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:onClick="letterTap"
+        android:text="---"
+        app:layout_constraintBottom_toBottomOf="@+id/but6"
+        app:layout_constraintEnd_toStartOf="@+id/but8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/but6" />
+
+    <Button
+        android:id="@+id/but8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamebutton"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:onClick="letterTap"
+        android:text="---"
+        app:layout_constraintBottom_toBottomOf="@+id/but7"
+        app:layout_constraintEnd_toStartOf="@+id/but9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/but7" />
+
+    <Button
+        android:id="@+id/but9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamebutton"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:text="---"
+        app:layout_constraintBottom_toBottomOf="@+id/but8"
+        app:layout_constraintEnd_toStartOf="@+id/but10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/but8"
+        android:onClick="letterTap" />
+
+    <Button
+        android:id="@+id/but10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gamebutton"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:onClick="letterTap"
+        android:text="---"
+        app:layout_constraintBottom_toBottomOf="@+id/but9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/but9" />
+
+    <Button
+        android:id="@+id/safequit"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/mybutton1"
+        android:enabled="false"
+        android:onClick="safequit"
+        android:text="Salvar e Sair"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

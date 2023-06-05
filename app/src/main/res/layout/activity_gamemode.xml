@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gamemode">
+
+    <TextView
+        android:id="@+id/gm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="cursive"
+        android:text="M_do De Jog_"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gm_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Test_User"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gm_title" />
+
+    <Button
+        android:id="@+id/gm_normal"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/mybutton1"
+        android:onClick="gotoPartida"
+        android:text="Normal"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gm_user" />
+
+    <TextView
+        android:id="@+id/textNormal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Joga sem pressão, aprende e diverte-te. Recebes 1.0x mais XP quando acabares a partida"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@id/gm_normal"
+        app:layout_constraintStart_toStartOf="@+id/gm_normal"
+        app:layout_constraintTop_toBottomOf="@id/gm_normal" />
+
+    <Button
+        android:id="@+id/gm_cr"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/mybutton1"
+        android:backgroundTint="#E78F3B"
+        android:onClick="gotoPartida"
+        android:text="Contra-Relógio"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textNormal" />
+
+    <TextView
+        android:id="@+id/textCR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tens 60 segundos para jogar, quantas letras consegues acertar? Recebes 1.75x mais XP quando acabares a partida"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/gm_cr"
+        app:layout_constraintStart_toStartOf="@+id/gm_cr"
+        app:layout_constraintTop_toBottomOf="@id/gm_cr" />
+
+    <Button
+        android:id="@+id/gm_hardcore"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/mybutton1"
+        android:backgroundTint="#941B1B"
+        android:onClick="gotoPartida"
+        android:text="Hardcore"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCR" />
+
+    <TextView
+        android:id="@+id/textHardcore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Só os mais Fortes jogam neste modo extremamente punível. Mostra que és o rei do Dicionário. Recebes 2.5x mais XP quando acabares a partida"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@id/gm_hardcore"
+        app:layout_constraintRight_toRightOf="@id/gm_hardcore"
+        app:layout_constraintTop_toBottomOf="@id/gm_hardcore" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tmll_nome"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:background="#F5B1ABAB"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tmll_gamemode"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:background="#F5B1ABAB"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tmll_score"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:background="#F5B1ABAB"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tmll_date"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:background="#F5B1ABAB"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+</LinearLayout>

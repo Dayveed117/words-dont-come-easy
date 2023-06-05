@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pr_fundo"
+    android:background="@color/dedgreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".highscorepopup">
+
+    <TextView
+        android:id="@+id/hs_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:text="NOVO RECORDE !"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newpr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="11500"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frase1" />
+
+    <TextView
+        android:id="@+id/frase1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="O teu novo recorde:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/hs_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hs_title"
+        app:layout_constraintTop_toBottomOf="@+id/mr_user" />
+
+    <TextView
+        android:id="@+id/mr_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Test_user"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/hs_title"
+        app:layout_constraintStart_toStartOf="@+id/hs_title"
+        app:layout_constraintTop_toBottomOf="@+id/hs_title" />
+
+    <Button
+        android:id="@+id/sharebtn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/mybutton2"
+        android:onClick="share"
+        android:text="Partilhar"
+        app:layout_constraintEnd_toEndOf="@+id/hs_title"
+        app:layout_constraintStart_toStartOf="@+id/hs_title"
+        app:layout_constraintTop_toBottomOf="@+id/newpr" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

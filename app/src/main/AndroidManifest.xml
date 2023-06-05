@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pmd.di.ubi.pt.mainmenu">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+        <activity
+            android:name=".highscorepopup"
+            android:label=".highscorepopip"
+            android:theme="@style/AppTheme.PopupStyle" />
+        <activity
+            android:name=".timelinepopup"
+            android:label=".timelinepopup"
+            android:theme="@style/AppTheme.PopupStyle" />
+        <activity
+            android:name=".infoPopup"
+            android:label=".infopopup"
+            android:theme="@style/AppTheme.PopupStyle" />
+        <activity
+            android:name=".entryPoint"
+            android:label="Words">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".definicoes"
+            android:label="definicoes" />
+        <activity
+            android:name=".perfil"
+            android:label="perfil" />
+        <activity
+            android:name=".proezas"
+            android:label="proezas" />
+        <activity
+            android:name=".partida"
+            android:label="partida" />
+        <activity
+            android:name=".classificacoes"
+            android:label="classificacoes" />
+        <activity
+            android:name=".gamemode"
+            android:label="gamemode" />
+        <activity
+            android:name=".mainmenu"
+            android:label=".mainmenu" />
+    </application>
+
+</manifest>

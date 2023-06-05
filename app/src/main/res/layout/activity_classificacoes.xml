@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".classificacoes">
+
+        <TextView
+            android:id="@+id/c_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="cursive"
+            android:text="Classifi_ações"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/c_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Test_User"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/c_title" />
+
+        <Button
+            android:id="@+id/c_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/tablike"
+            android:onClick="leaderboard"
+            android:text="Normal"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/c_user" />
+
+        <Button
+            android:id="@+id/c_cr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tablike"
+            android:backgroundTint="#E78F3B"
+            android:onClick="leaderboard"
+            android:text="Contra-Relógio"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/c_normal"
+            app:layout_constraintLeft_toRightOf="@id/c_normal" />
+
+
+        <Button
+            android:id="@+id/c_hardcore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tablike"
+            android:backgroundTint="#941B1B"
+            android:onClick="leaderboard"
+            android:text="Hardcore"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/c_cr"
+            app:layout_constraintStart_toEndOf="@+id/c_cr" />
+
+        <LinearLayout
+            android:id="@+id/c_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/c_normal" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
